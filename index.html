@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<link rel="icon" type="image/x-icon" href="img/CLEAN UP COLOR.ico" />
+		<title>Cleanup Mexico</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800"
+			rel="stylesheet"
+		/>
+		<!-- Theme Style -->
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/bulma.min.css" />
+	</head>
+	<body class="has-navbar-fixed-top">
+		<!-- START header -->
+		<header role="banner">
+			<!-- START nav -->
+			<nav class="navbar has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
+				<div class="navbar-brand">
+					<a class="navbar-item--1" href="">
+						<img
+							class="navbar-item-1-img image is-hidden-mobile"
+							src="img/Clean UP Imagen Corporativa 1 of 7.png"
+							alt=""
+						/>
+						<img
+							class="navbar-item-1-img2 image is-hidden-tablet"
+							src="img/Clean UP Imagen Corporativa 1 of 7.png"
+							alt=""
+						/>
+					</a>
+
+					<a
+						role="button"
+						class="navbar-burger"
+						aria-label="menu"
+						aria-expanded="false"
+						data-target="navbarBasicExample"
+					>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</a>
+				</div>
+
+				<div id="navbarBasicExample" class="navbar-menu">
+					<div class="navbar-end">
+						<a class="navbar-item has-text-centered active" href="index.html"> Inicio </a>
+						<a class="navbar-item has-text-centered" href="#serv1"> Limpieza y sanitizacion </a>
+						<a class="navbar-item has-text-centered" href="#serv2"> Mantenimiento </a>
+						<a class="navbar-item has-text-centered" href="#serv3"> Terciarizacion de Procesos </a>
+						<a class="navbar-item has-text-centered" href="#serv4"> Fletes y Reparto </a>
+						<a
+							class="navbar-item has-text-centered"
+							href="https://wa.me/52"
+							target="_blank"
+							alt="Contáctanos por whatsapp"
+						>
+							<img
+								width="31"
+								alt="WhatsApp"
+								src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+							/>
+						</a>
+					</div>
+				</div>
+			</nav>
+			<script>
+				/*
+				document.addEventListener("DOMContentLoaded", () => {
+					// Get all "navbar-burger" elements
+					const $navbarBurgers = Array.prototype.slice.call(
+						document.querySelectorAll(".navbar-burger"),
+						0
+					);
+
+					// Check if there are any navbar burgers
+					if ($navbarBurgers.length > 0) {
+						// Add a click event on each of them
+						$navbarBurgers.forEach((el) => {
+							el.addEventListener("click", () => {
+								// Get the target from the "data-target" attribute
+								const target = el.dataset.target;
+								const $target = document.getElementById(target);
+
+								// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+								el.classList.toggle("is-active");
+								$target.classList.toggle("is-active");
+							});
+						});
+					}
+				});*/
+				var menuToggle = document.querySelector(".navbar-burger");
+				var menuContent = document.querySelector(".navbar-menu");
+				menuToggle.addEventListener("click", navAction);
+				menuContent.addEventListener("click", navAction);
+				var menuClose = true;
+				function navAction() {
+					if (menuClose == true) {
+						menuClose = false;
+						menuToggle.classList.toggle("is-active");
+						menuContent.classList.toggle("is-active");
+					} else {
+						menuClose = true;
+						menuToggle.classList.remove("is-active");
+						menuContent.classList.remove("is-active");
+					}
+				}
+			</script>
+			<div class="columns is-multiline">
+				<div class="column is-full">
+					<p class="header__span p-3"></p>
+				</div>
+				<div class="column is-full is-hidden-touch">
+					<p class="header__span p-3"></p>
+				</div>
+			</div>
+		</header>
+		<!-- END header -->
+
+		<!-- START slider -->
+		<section class="is-large mt-3">
+			<div class="section-div">
+				<ul class="section__slider">
+					<li class="section__slider__li-slide image is-fullwidth">
+						<img id="li-slide1" src="img/slider-1.jpg" alt="" />
+						<img id="li-slide2" src="img/slider-2.jpg" alt="" />
+						<img id="li-slide3" src="img/slider-3.jpg" alt="" />
+						<img id="li-slide4" src="img/flete.png" alt="" />
+					</li>
+				</ul>
+				<div class="section__txt columns is-centered is-multiline">
+					<div class="column is-full is-hidden-mobile">
+						<p class="section__txt__columns__span"></p>
+					</div>
+					<div class="column is-full is-hidden-mobile">
+						<p class="section__txt__columns__span"></p>
+					</div>
+					<div class="column is-full is-hidden-desktop is-hidden-tablet">
+						<p class="section__txt__columns__span__mobile"></p>
+					</div>
+					<div class="section__txt__columns column is-two-thirds">
+						<h2
+							class="
+								section__txt__columns__column__h2
+								title
+								is-2 is-size-4-mobile
+								has-text-weight-bold
+							"
+						>
+							CLEAN UP
+						</h2>
+						<h3
+							class="
+								section__txt__columns__column__h3
+								subtitle
+								is-4
+								mb-1
+								is-size-6-mobile is-uppercase
+								has-text-weight-semibold
+							"
+						></h3>
+						<p
+							class="
+								section__txt__columns__column__p
+								has-text-weight-semibold
+								mb-0
+								is-size-7-mobile is-size-5
+							"
+						></p>
+						<a href="#contact" class="btn--4 mt-2">
+							<span class="btn--4__span is-size-7">Contáctanos</span>
+						</a>
+					</div>
+					<div class="column is-full is-hidden-mobile">
+						<p class="section__txt__columns__span"></p>
+					</div>
+					<div class="column is-full is-hidden-mobile">
+						<p class="section__txt__columns__span"></p>
+					</div>
+					<div class="column is-full is-hidden-desktop is-hidden-tablet">
+						<p class="section__txt__columns__span__mobile"></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="body-box columns has-background-info has-text-white is-multiline is-relative">
+			<div class="column is-full is-hidden-mobile">
+				<p class="columns__span"></p>
+			</div>
+			<div class="column is-one-fifth is-hidden-mobile">
+				<p class="columns__span--1-5"></p>
+			</div>
+			<div class="column is-two-fifths">
+				<p class="section__txt__columns__box is-inline-block is-size-3 is-size-4-mobile">
+					Terciarizacion de procesos
+				</p>
+			</div>
+			<div class="column is-one-fifth is-hidden-tablet is-hidden-mobile">
+				<p class="columns__span--1-5"></p>
+			</div>
+			<div class="column is-one-fifth has-text-centered">
+				<a href="" class="btn--4 btn--4cot mt-1">
+					<span class="btn--4__span is-size-6">Cotizar</span>
+				</a>
+			</div>
+			<div class="column is-full is-hidden-mobile">
+				<p class="columns__span"></p>
+			</div>
+		</div>
+		<section>
+			<div class="columns is-multiline is-centered">
+				<div class="column is-full">
+					<p class="space"></p>
+				</div>
+				<div class="column is-one-fifth">
+					<h2 class="title is-3 has-text-centered">SERVICIOS</h2>
+				</div>
+				<div class="column is-full has-text-centered pt-0">
+					<p class="line"></p>
+				</div>
+				<div class="column is-full p-0">
+					<p class="space-2"></p>
+				</div>
+				<div class="column is-two-fifths has-text-centered">
+					<p class="is-size-4">
+						Somos una empresa que desde hace más de 10 años ha tenido el objetivo principal de dar a
+						sus clientes la más alta calidad y profesionalismo, con personal calificado para ser su
+						mejor alternativa en:
+					</p>
+				</div>
+				<div class="column is-full">
+					<p class="space"></p>
+				</div>
+				<div class="column is-one-fifth has-text-centered is-size-4 mb-6 servicios-landscape">
+					<img class="toolbox" src="img/repairing.png" alt="" />
+					<h3 class="">Limpieza y sanitización</h3>
+					<p class="is-size-6 mt-3">
+						Soluciones de limpieza y mantenimiento en manos de profesionales.
+					</p>
+					<a href="" class="btn--4 btn--4mas mt-3">
+						<span class="btn--4__span span-mas is-size-6">Más...</span>
+					</a>
+				</div>
+				<div class="column is-one-fifth has-text-centered is-size-4 mb-6 servicios-landscape">
+					<img class="toolbox" src="img/toolbox.png" alt="" />
+					<h3 class="">Mantenimiento</h3>
+					<p class="is-size-6 mt-3">
+						¡El correcto funcionamiento de todas sus instalaciones es nuestra prioridad!
+					</p>
+					<a href="" class="btn--4 btn--4mas mt-3">
+						<span class="btn--4__span span-mas is-size-6">Más...</span>
+					</a>
+				</div>
+				<div class="column is-one-fifth has-text-centered is-size-4 mb-6 servicios-landscape">
+					<img class="toolbox" src="img/satisfaction.png" alt="" />
+					<h3 class="">Terciarización de procesos</h3>
+					<p class="is-size-6 mt-3">Soluciones a tu alcance, para cualquiera de tus necesidades.</p>
+					<a href="" class="btn--4 btn--4mas mt-3">
+						<span class="btn--4__span span-mas is-size-6">Más...</span>
+					</a>
+				</div>
+				<div class="column is-one-fifth has-text-centered is-size-4 mb-6 servicios-landscape">
+					<img class="reparto" src="img/reparto.jpg" alt="" />
+					<h3>Fletes y reparto</h3>
+					<p class="is-size-6 mt-3">
+						Transportamos cualquiera que sea te necesidad, al lugar que requieras.
+					</p>
+					<a href="" class="btn--4 btn--4mas mt-3">
+						<span id="serv1" class="btn--4__span span-mas is-size-6">Más...</span>
+					</a>
+				</div>
+				<div class="column is-full">
+					<p class="space"></p>
+				</div>
+				<div class="column is-two-fifths">
+					<h2 class="title is-3 has-text-centered">Limpieza y sanitización</h2>
+				</div>
+				<div class="column is-full has-text-centered pt-0">
+					<p class="line" id="showlimptxt"></p>
+				</div>
+				<div class="column is-full p-0">
+					<p class="space-2"></p>
+				</div>
+				<div class="column is-two-fifths has-text-centered">
+					<p class="is-size-4">
+						Dale ese toque a tu empresa, con un ambiente de trabajo limpio y seguro.
+					</p>
+					<p class="is-size-4 limpieza-det serv-det" id="limpieza-det">
+						Limpieza y sanitización de oficinas, naves industriales, comercios, depósitos logísticos
+						e industria automotriz. <br /><br />Operación de maquinaras especializadas como
+						pulidoras y barredoras de pisos, pistolas para lavado a presión, maquinas sanitizadoras,
+						etc. <br /><br />Brindamos soluciónes de limpieza profesional creando un ambiente de
+						trabajo limpio y seguro para nuestros clientes.
+					</p>
+					<a href="#showlimptxt" class="btn--4 btn--4mas mt-4">
+						<span class="btn--4__span span-serv is-size-6 det-span" id="det-span">Detalles</span>
+						<span class="btn--4__span span-serv is-size-6 hide-span" id="hide-span">Ocultar</span>
+					</a>
+
+					<script>
+						const detSpan = document.querySelector(".det-span");
+						const limpDet = document.querySelector(".limpieza-det");
+						const hideSpan = document.querySelector(".hide-span");
+						limpDet.style.display = "none";
+						hideSpan.style.display = "none";
+
+						detSpan.addEventListener("click", showDet);
+						function showDet() {
+							detSpan.style.display = "none";
+							limpDet.style.display = "block";
+							hideSpan.style.display = "block";
+						}
+						hideSpan.addEventListener("click", hideDet);
+						function hideDet() {
+							detSpan.style.display = "block";
+							limpDet.style.display = "none";
+							hideSpan.style.display = "none";
+						}
+					</script>
+				</div>
+				<div class="column is-full">
+					<p id="serv2" class="space"></p>
+				</div>
+				<div class="column is-full">
+					<p class="space"></p>
+				</div>
+				<div class="column is-two-fifths">
+					<h2 class="title is-3 has-text-centered">Mantenimiento</h2>
+				</div>
+				<div class="column is-full has-text-centered pt-0">
+					<p class="line" id="showmanttxt"></p>
+				</div>
+				<div class="column is-full p-0">
+					<p class="space-2"></p>
+				</div>
+				<div class="column is-two-fifths has-text-centered">
+					<p class="is-size-4">
+						La operación continua y correcta de todos los componentes de sus instalaciones es un
+						compromiso para nosotros.
+					</p>
+					<p class="is-size-4 mantenimiento-det serv-det" id="mantenimiento-det">
+						Servicios de mantenimiento general, como: jardinería, albañilería, pintura, plomería,
+						impermeabilización, herrería, cerrajería, etc. <br /><br />Supervisión constante en el
+						desarrollo de las tareas diarias, con cuadrillas especializadas, para cualquier solución
+						que se requiera.
+					</p>
+					<a href="#showmanttxt" class="btn--4 btn--4mas mt-4">
+						<span class="btn--4__span span-serv is-size-6 det-span2" id="det-span2">Detalles</span>
+						<span class="btn--4__span span-serv is-size-6 hide-span2" id="hide-span2">Ocultar</span>
+					</a>
+
+					<script>
+						const detSpan2 = document.getElementById("det-span2");
+						const mantDet = document.getElementById("mantenimiento-det");
+						const hideSpan2 = document.getElementById("hide-span2");
+						mantDet.style.display = "none";
+						hideSpan2.style.display = "none";
+
+						detSpan2.addEventListener("click", showDet2);
+						function showDet2() {
+							detSpan2.style.display = "none";
+							mantDet.style.display = "block";
+							hideSpan2.style.display = "block";
+						}
+						hideSpan2.addEventListener("click", hideDet2);
+						function hideDet2() {
+							detSpan2.style.display = "block";
+							mantDet.style.display = "none";
+							hideSpan2.style.display = "none";
+						}
+					</script>
+				</div>
+				<div class="column is-full">
+					<p id="serv3" class="space"></p>
+				</div>
+				<div class="column is-full">
+					<p class="space"></p>
+				</div>
+				<div class="column is-two-fifths">
+					<h2 class="title is-3 has-text-centered">Terciarizacion de procesos</h2>
+				</div>
+				<div class="column is-full has-text-centered pt-0">
+					<p class="line" id="showterctxt"></p>
+				</div>
+				<div class="column is-full p-0">
+					<p class="space-2"></p>
+				</div>
+				<div class="column is-two-fifths has-text-centered">
+					<p class="is-size-4">
+						Deja en nuestras manos, todo aquello que te desenfoca del giro principal de tu negocio
+						¡Nosotros lo solucionamos por ti!
+					</p>
+					<p class="is-size-4 terci-det serv-det" id="terci-det">
+						Nos encargamos de los procesos que no le generan un valor agregado al giro de nuestros
+						clientes, ayudándolos a ser mas efectivos y a su vez asegurando mantener sus estándares
+						de seguridad, productividad y calidad. <br /><br />Administramos el capital humano
+						(selección, reclutamiento, contratación y pago) con apoyo personalizado y soluciones que
+						permiten hacer más eficiente la operación de nuestros clientes.
+					</p>
+					<a href="#showterctxt" class="btn--4 btn--4mas mt-4">
+						<span class="btn--4__span span-serv is-size-6 det-span3" id="det-span3">Detalles</span>
+						<span class="btn--4__span span-serv is-size-6 hide-span3" id="hide-span3">Ocultar</span>
+					</a>
+
+					<script>
+						const detSpan3 = document.getElementById("det-span3");
+						const tercDet = document.getElementById("terci-det");
+						const hideSpan3 = document.getElementById("hide-span3");
+						tercDet.style.display = "none";
+						hideSpan3.style.display = "none";
+
+						detSpan3.addEventListener("click", showDet3);
+						function showDet3() {
+							detSpan3.style.display = "none";
+							tercDet.style.display = "block";
+							hideSpan3.style.display = "block";
+						}
+						hideSpan3.addEventListener("click", hideDet3);
+						function hideDet3() {
+							detSpan3.style.display = "block";
+							tercDet.style.display = "none";
+							hideSpan3.style.display = "none";
+						}
+					</script>
+				</div>
+				<div class="column is-full">
+					<p id="serv4" class="space"></p>
+				</div>
+				<div class="column is-full">
+					<p class="space"></p>
+				</div>
+				<div class="column is-two-fifths">
+					<h2 class="title is-3 has-text-centered">Fletes y reparto</h2>
+				</div>
+				<div class="column is-full has-text-centered pt-0">
+					<p class="line" id="showfletestxt"></p>
+				</div>
+				<div class="column is-full p-0">
+					<p class="space-2"></p>
+				</div>
+				<div class="column is-two-fifths has-text-centered">
+					<p class="is-size-4">
+						Mas de 10 años de experiencia en la administración de flotas de reparto.
+					</p>
+					<p class="is-size-4 fletes-det serv-det" id="fletes-det">
+						Operadores Expertos apegados a Protocolos de Seguridad y Experiencia en Servicio al
+						Cliente. <br /><br />Todas nuestras unidades cuentan con Seguro y Placas Federales.
+					</p>
+					<a href="#showfletestxt" class="btn--4 btn--4mas mt-4">
+						<span class="btn--4__span span-serv is-size-6 det-span4" id="det-span4">Detalles</span>
+						<span class="btn--4__span span-serv is-size-6 hide-span4" id="hide-span4">Ocultar</span>
+					</a>
+
+					<script>
+						const detSpan4 = document.getElementById("det-span4");
+						const fletDet = document.getElementById("fletes-det");
+						const hideSpan4 = document.getElementById("hide-span4");
+						fletDet.style.display = "none";
+						hideSpan4.style.display = "none";
+
+						detSpan4.addEventListener("click", showDet4);
+						function showDet4() {
+							detSpan4.style.display = "none";
+							fletDet.style.display = "block";
+							hideSpan4.style.display = "block";
+						}
+						hideSpan4.addEventListener("click", hideDet4);
+						function hideDet4() {
+							detSpan4.style.display = "block";
+							fletDet.style.display = "none";
+							hideSpan4.style.display = "none";
+						}
+					</script>
+				</div>
+				<div id="contact" class="column is-full">
+					<p class="space"></p>
+				</div>
+				<div class="column is-full">
+					<p class="space"></p>
+				</div>
+				<div class="column is-two-fifths">
+					<h2 class="title is-3 has-text-centered">Contacto</h2>
+				</div>
+				<div class="column is-full has-text-centered pt-0">
+					<p class="line"></p>
+				</div>
+				<div class="column is-full p-0">
+					<p class="space-2"></p>
+				</div>
+				<div class="column is-half">
+					<form action="" class="mx-6">
+						<div class="field is-horizontal">
+							<div class="field-body">
+								<div class="field">
+									<p class="control is-expanded">
+										<input class="input is-info" type="text" placeholder="Tu nombre" />
+									</p>
+								</div>
+								<div class="field">
+									<p class="control is-expanded">
+										<input class="input is-info" type="tel" placeholder="Tu número de teléfono" />
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="field">
+							<p class="control is-expanded">
+								<input class="input is-info" type="email" placeholder="Tu correo electrónico" />
+							</p>
+						</div>
+						<div class="field">
+							<div class="control">
+								<textarea
+									class="textarea is-large has-fixed-size is-info"
+									placeholder="Deja tu mensaje aquí"
+								></textarea>
+							</div>
+						</div>
+						<div class="columns is-centered">
+							<div class="column is-one-fifth has-text-centered">
+								<a href="" class="btn--4 mx-5">
+									<span class="btn--4__span is-size-7">Enviar</span>
+								</a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="column is-half"></div>
+			</div>
+		</section>
+		<footer class="footer mt-6">
+			<div class="columns is-centered">
+				<div class="column"></div>
+			</div>
+		</footer>
+	</body>
+</html>
